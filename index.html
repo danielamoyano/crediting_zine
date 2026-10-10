@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Who made this exhibit? A zine on the complexity of credit giving</title>
+  <meta name="description" content="A web zine on how science museums credit (and don't credit) the people who make exhibits.">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!--
+  HOW POSITIONS WORK
+  On desktop every element with class "a" is placed with the coordinates of the
+  Figma frame (1512 px wide):  --x = left,  --y = top,  --w = width.
+  The whole page scales with the window. On phones these are ignored and the
+  content stacks in one column (see the "MOBILE" block in style.css).
+
+  THE LINE
+  The line passes through every element that has a data-line="N" attribute,
+  in the order of N. Circles also carry data-dot="x,y" (where the dot sits
+  inside the image, from 0 to 1). Elements with class "via" are invisible
+  waypoints that only bend the line. Circles with data-knot are the ones the
+  line tangles through at the end.
+-->
+
+<div class="page" id="page">
+
+  <!-- full-width colour bands (desktop) -->
+  <div class="band band-pink"  aria-hidden="true"></div>
+  <div class="band band-dark"  aria-hidden="true" data-darkzone></div>
+  <div class="band band-texture" aria-hidden="true"></div>
+
+  <main class="stage">
+
+    <!-- ───────────────────────── 1 · HERO ───────────────────────── -->
+    <section class="s s-hero">
+      <img class="a c col" id="c-purple" src="assets/img/blob-purple.png" alt="" width="418" height="435"
+           style="--x:187.5;--y:41.5;--w:418" data-line="20" data-dot="0.5921,0.4839">
+      <img class="a c col" id="c-blue" src="assets/img/blob-blue.png" alt="" width="262" height="263"
+           style="--x:1063;--y:122;--w:262" data-line="10" data-dot="0.5103,0.4955">
+      <img class="a c col" id="c-green" src="assets/img/blob-green.png" alt="" width="394" height="390"
+           style="--x:230;--y:500;--w:394" data-line="30" data-dot="0.5343,0.5141">
+
+      <i class="a via" style="--x:1010;--y:118" data-line="12"></i>
+      <i class="a via" style="--x:760;--y:92" data-line="14"></i>
+      <i class="a via" style="--x:560;--y:128" data-line="16"></i>
+      <i class="a via" style="--x:330;--y:470" data-line="25"></i>
+      <i class="a via" style="--x:360;--y:900" data-line="32"></i>
+      <i class="a via" style="--x:170;--y:1000" data-line="34"></i>
+      <h1 class="a t-hero" style="--x:632;--y:189;--w:560">Who made this exhibit?</h1>
+
+      <img class="a subtitle" src="assets/img/subtitle-curve.png" width="553" height="313"
+           alt="A zine on the complexity of credit giving" style="--x:565;--y:311;--w:553">
+
+      <div class="a hi" style="--x:899;--y:408;--w:418">
+        <img src="assets/img/paper-stack.png" alt="" width="418" height="234">
+        <p>Hi. We’re a small team of visualization researchers at Linköping University in Sweden.</p>
+      </div>
+
+      <h2 class="a t-h1" style="--x:610;--y:710;--w:560">Why this web zine?</h2>
+
+      <div class="a prose" style="--x:606;--y:802;--w:545">
+        <p>A while back, we worked with our local science museum —the Visualization Center C— to design an interactive exhibit. The project brought together research, design, technical development, and museum expertise. Then came the less exciting part: figuring out how to credit everyone involved. To do that, we looked around the museum and see how credit was handled.</p>
+        <p>We found that interactive exhibits don’t have credits. Dome shows in the museum, meanwhile, ended with credit reels, with rolling text and names and the whole thing. We thought this discrepancy was interesting.</p>
+        <p>So we interviewed staff and leadership at 4 science museums in 2 countries to understand more. What we learned is that crediting is complex, emotional, and very important.</p>
+        <p>Throughout this zine, you'll hear directly from the people we interviewed. Their words appear as quotes alongside what we learned from the research.</p>
+      </div>
+
+      <img class="a photo" id="photo-exhibit" src="assets/img/exhibit-photo.png" width="395" height="264"
+           alt="A child exploring an interactive exhibit table showing a skeleton" style="--x:200;--y:1028;--w:395">
+
+      <p class="band band-green t-h2">This zine exists to bring our <br>findings to you.</p>
+    </section>
+
+    <!-- ─────────────────── 2 · WHO IS CREDIT FOR? ─────────────────── -->
+    <section class="s s-who">
+      <i class="a via" style="--x:100;--y:1230" data-line="36"></i>
+      <i class="a via" style="--x:260;--y:1392" data-line="37"></i>
+      <i class="a via" style="--x:600;--y:1404" data-line="37.3"></i>
+      <i class="a via" style="--x:680;--y:1440" data-line="37.5"></i>
+      <i class="a via" style="--x:711;--y:1492" data-line="37.7"></i>
+      <i class="a via" style="--x:720;--y:1526" data-line="38"></i>   <!-- corner of the box -->
+      <i class="a via" style="--x:692;--y:1552" data-line="38.2"></i>
+      <i class="a via" style="--x:600;--y:1564" data-line="38.3"></i>
+      <i class="a via" style="--x:300;--y:1564" data-line="38.6"></i>
+      <i class="a via" style="--x:200;--y:1571" data-line="38.8"></i>
+      <i class="a via" style="--x:168;--y:1632" data-line="39"></i>
+      <i class="a via" style="--x:215;--y:1684" data-line="40.5"></i>
+      <i class="a via" style="--x:330;--y:1681" data-line="41"></i>
+      <i class="a via" style="--x:560;--y:1677" data-line="42"></i>
+      <i class="a via" style="--x:712;--y:1745" data-line="45"></i>
+      <i class="a via" style="--x:800;--y:1772" data-line="46"></i>
+      <i class="a via" style="--x:862;--y:1868" data-line="49"></i>
+      <i class="a via" style="--x:640;--y:1878" data-line="50"></i>
+      <i class="a via" style="--x:472;--y:1866" data-line="51"></i>
+      <i class="a via" style="--x:360;--y:1824" data-line="53"></i>
+      <i class="a via" style="--x:240;--y:1868" data-line="54"></i>
+      <i class="a via" style="--x:190;--y:1992" data-line="57"></i>
+      <i class="a via" style="--x:420;--y:2040" data-line="58"></i>
+      <i class="a via" style="--x:650;--y:1985" data-line="59"></i>
+      <i class="a via" style="--x:808;--y:1992" data-line="60.5"></i>
+      <i class="a via" style="--x:905;--y:2026" data-line="61"></i>
+      <i class="a via" style="--x:1250;--y:2045" data-line="62"></i>
+      <i class="a via" style="--x:1395;--y:2200" data-line="63"></i>
+      <i class="a via" style="--x:1400;--y:2340" data-line="64"></i>
+      <h2 class="a t-h1w" style="--x:218;--y:1428;--w:420">Who is<br>credit for?</h2>
+
+      <div class="a callout" style="--x:720;--y:1450;--w:594">
+        <p class="t-h2">So if it's not for the public, who is it for?</p>
+        <p>Turns out: almost everyone but them.</p>
+      </div>
+
+      <p class="a t-h2 lead" style="--x:211;--y:1582;--w:480">We started this whole project assuming credit was for visitors. Turns out, that's only half the story.</p>
+
+      <div class="bl">
+        <i class="a dot" style="--x:187;--y:1701" data-line="40"></i>
+        <div class="a" style="--x:212;--y:1694;--w:400">
+          <p class="t-h3">“...for the public I don't think it matters.”</p>
+          <p class="credit">Exhibit Developer</p>
+        </div>
+      </div>
+
+      <div class="bl">
+        <i class="a dot" style="--x:699;--y:1663" data-line="44"></i>
+        <div class="a" style="--x:728;--y:1652;--w:470">
+          <p>The person whose kid visits, points at the wall and says</p>
+          <p class="t-h3">“This is my mom’s work”</p>
+          <p class="credit">Exhibit designer</p>
+        </div>
+      </div>
+
+      <div class="bl">
+        <i class="a dot" style="--x:436;--y:1803" data-line="52"></i>
+        <div class="a" style="--x:462;--y:1799;--w:370">
+          <p>The colleague thinking about a raise, or their next job.</p>
+        </div>
+      </div>
+
+      <div class="bl">
+        <i class="a dot" style="--x:902;--y:1774" data-line="48"></i>
+        <div class="a" style="--x:931;--y:1769;--w:390">
+          <p>The early-career designer who needs proof for a portfolio, because right now it's</p>
+          <p class="t-h3">“not written on the piece itself.”</p>
+          <p class="credit">Director of Editorial</p>
+        </div>
+      </div>
+
+      <div class="bl">
+        <i class="a dot" style="--x:206;--y:1911" data-line="56"></i>
+        <div class="a" style="--x:228;--y:1904;--w:380">
+          <p>The educator who explains to a visitor that</p>
+          <p class="t-h3">“This is real data... not just something we made.”</p>
+          <p class="credit">Senior Director of Exhibitions</p>
+        </div>
+      </div>
+
+      <div class="bl">
+        <i class="a dot" style="--x:789;--y:1928" data-line="60"></i>
+        <div class="a" style="--x:818;--y:1925;--w:430">
+          <p>The funder, whose logo placement is contractual and non-negotiable.</p>
+        </div>
+      </div>
+
+      <p class="a each" style="--x:443;--y:2109;--w:596">Each of these people needs credit to do something different: to make someone proud, to prove someone worked here, to honor a contract, to say this is real science. So a credit list isn't one thing that some people happen to care about more than others. Credit is different things to different people, and that might be part of why nobody's landed on how to do it.</p>
+    </section>
+
+    <!-- ─────────────── 3 · THE (UNSPOKEN) RULE ─────────────── -->
+    <section class="s s-rule">
+      <img class="a wash" src="assets/img/wash-blue.png" alt="" width="954" height="1046" style="--x:630;--y:2790;--w:880">
+
+      <i class="a via" style="--x:1150;--y:2555" data-line="71"></i>
+      <i class="a via" style="--x:990;--y:2592" data-line="71.5"></i>
+      <i class="a via" style="--x:848;--y:2960" data-line="73"></i>
+      <i class="a via" style="--x:500;--y:2948" data-line="74"></i>
+      <i class="a via" style="--x:322;--y:2990" data-line="75"></i>
+      <i class="a via" style="--x:235;--y:3190" data-line="77"></i>
+      <i class="a via" style="--x:520;--y:3232" data-line="78"></i>
+      <i class="a via" style="--x:770;--y:3480" data-line="81"></i>
+      <i class="a via" style="--x:835;--y:3585" data-line="82"></i>
+      <h2 class="a t-h1w" style="--x:187;--y:2313;--w:760">There is an (unspoken) rule... and exceptions</h2>
+
+      <div class="a prose" style="--x:187;--y:2462;--w:625">
+        <p>We found that nobody actually decides that exhibit creators shouldn't be credited. It's just how things ended up, and it's been that way long enough that it doesn't really feel like a decision anymore, more like an unspoken rule behind how museums work.</p>
+        <p>Almost none of the people we interviewed –staff and leadership across the four museums–had deeply considered exhibit crediting before we asked them about it directly.</p>
+        <p class="gap">The reaction to our questions wasn't defensiveness, and it wasn't really an explanation either; it was closer to mild surprise, like we'd pointed at something that had been sitting there the whole time without anyone noticing it. It’s as if the making of exhibits is invisible.</p>
+        <p>Invisibility is different from a cover-up, where someone is actively keeping something quiet, and it's different from an actual decision, where someone made a call and moved on. This felt more like a habit nobody remembers picking up, one that's been running in the background so long that questioning it just never comes up until someone from outside points at it.</p>
+      </div>
+
+      <figure class="q q-right">
+        <blockquote class="a" style="--x:870;--y:2459;--w:285">
+          <p class="t-h3">“I hadn't even realized this was missing.”</p>
+          <footer class="credit">Dome Shows Producer</footer>
+        </blockquote>
+        <img class="a c" src="assets/img/ring-a.png" alt="" width="115" height="127"
+             style="--x:1159;--y:2419;--w:115" data-line="70" data-dot="0.4927,0.4934">
+      </figure>
+
+      <figure class="q">
+        <img class="a c" src="assets/img/ring-a.png" alt="" width="115" height="127"
+             style="--x:852;--y:2612;--w:115" data-line="72" data-dot="0.4927,0.4934">
+        <blockquote class="a" style="--x:975;--y:2622;--w:330">
+          <p class="t-h3">“I don't think most people here are particularly concerned about it. I think it's just always been this way.”</p>
+          <footer class="credit">Director of Exhibits</footer>
+        </blockquote>
+      </figure>
+
+      <img class="a photo dome" src="assets/img/dome.png" width="436" height="291"
+           alt="An audience inside a dome theatre watching a projection of the Earth" style="--x:871;--y:2766;--w:436">
+
+      <figure class="q">
+        <img class="a c" src="assets/img/ring-b.png" alt="" width="132" height="141"
+             style="--x:190;--y:3000;--w:132" data-line="76" data-dot="0.4974,0.5082">
+        <blockquote class="a" style="--x:354;--y:3000;--w:420">
+          <p class="t-h3">“There are certain people we always credit... if we work with a scientist from another organization, we credit them as a distinct person.”</p>
+          <footer class="credit">Director of Exhibits</footer>
+        </blockquote>
+      </figure>
+
+      <figure class="q q-right">
+        <blockquote class="a" style="--x:170;--y:3274;--w:464">
+          <p class="t-h3">“The planetarium shows have always been credited, and the website products are always credited... by contract, we credit all outside photos.”</p>
+          <footer class="credit">Senior Director of Exhibitions</footer>
+        </blockquote>
+        <img class="a c" src="assets/img/ring-c.png" alt="" width="150" height="161"
+             style="--x:661;--y:3241;--w:150" data-line="80" data-dot="0.4978,0.5196">
+      </figure>
+
+      <div class="a prose" style="--x:855;--y:3097;--w:460">
+        <p>Once we looked closer, it turned out museums that skip crediting the exhibit team still credit plenty else, without anyone even having to think twice about it.</p>
+      </div>
+
+      <ul class="a checklist t-h2" style="--x:928;--y:3185;--w:380">
+        <li>Photos</li>
+        <li>Outside scientists and data sources</li>
+        <li>Dome shows</li>
+        <li>Funders</li>
+        <li class="no">The exhibit team</li>
+      </ul>
+
+      <div class="a prose" style="--x:852;--y:3470;--w:430">
+        <p>So, it's not that these museums can't do credit. They already do it, constantly. The exhibit team is just the thing that slips through.</p>
+      </div>
+
+      <p class="a t-h1w pre-dark" aria-hidden="true" style="--x:187;--y:3548;--w:700">Giving credit is</p>
+    </section>
+
+    <!-- ─────────────── 4 · GIVING CREDIT IS COMPLEX ─────────────── -->
+    <section class="s s-dark" data-darkzone>
+      <i class="a via" style="--x:930;--y:3690" data-line="83"></i>
+      <i class="a via" style="--x:1150;--y:3742" data-line="84"></i>
+      <i class="a via" style="--x:1262;--y:3915" data-line="87"></i>
+      <i class="a via" style="--x:1000;--y:3943" data-line="88"></i>
+      <i class="a via" style="--x:700;--y:3942" data-line="89"></i>
+      <i class="a via" style="--x:430;--y:3936" data-line="90"></i>
+      <i class="a via" style="--x:170;--y:4210" data-line="93"></i>
+      <i class="a via" style="--x:215;--y:4350" data-line="94"></i>
+      <i class="a via" style="--x:400;--y:4374" data-line="95"></i>
+      <i class="a via" style="--x:800;--y:4376" data-line="96"></i>
+      <i class="a via" style="--x:1300;--y:4650" data-line="99"></i>
+      <i class="a via" style="--x:1425;--y:4780" data-line="100"></i>
+      <i class="a via" style="--x:1432;--y:5100" data-line="101"></i>
+      <i class="a via" style="--x:1200;--y:5238" data-line="102"></i>
+      <i class="a via" style="--x:780;--y:5262" data-line="103"></i>
+      <h2 class="a t-complex" style="--x:190;--y:3626;--w:700"><span class="sr">Giving credit is </span>complex</h2>
+
+      <div class="a prose" style="--x:190;--y:3782;--w:480">
+        <p>We learned that credits are valuable, and that they are do-able. But also that making a credit list is complex, messy, and prone to failure.</p>
+      </div>
+
+      <figure class="q q-right">
+        <blockquote class="a" style="--x:686;--y:3781;--w:450">
+          <p class="t-h3">“The question is always where to draw the line... The bigger the credit list gets, the less helpful it is to the people whose creativity was involved in making this product.”</p>
+          <footer class="credit">Senior Director of Exhibitions</footer>
+        </blockquote>
+        <img class="a c col" src="assets/img/dark-green.png" alt="" width="150" height="149"
+             style="--x:1155;--y:3763;--w:150" data-line="86" data-dot="0.4633,0.5067">
+      </figure>
+
+      <figure class="q">
+        <img class="a c col" src="assets/img/dark-purple.png" alt="" width="197" height="200"
+             style="--x:180;--y:3918;--w:197" data-line="92" data-dot="0.5051,0.5425">
+        <blockquote class="a" style="--x:373;--y:3963;--w:386">
+          <p class="t-h3">I would say that nearly every department and hundreds of people are involved in the making of any exhibition… it’s easy to leave somebody off accidentally and offend them.</p>
+          <footer class="credit">Director of Exhibits</footer>
+        </blockquote>
+      </figure>
+
+      <div class="a ask" style="--x:365;--y:4113;--w:702">
+        <img src="assets/img/question-box.png" alt="" width="702" height="219">
+        <p>So who should be credited? How long should the list be? What happens when an exhibit changes? Who keeps the credits up to date?</p>
+      </div>
+
+      <div class="a prose" style="--x:192;--y:4398;--w:530">
+        <p>It turns out, other fields have already grappled with these questions. Planetarium productions routinely credit the people who make them. The games industry has spent years negotiating who belongs in the credits as projects grow, teams change, and work crosses organizational boundaries. Neither has found a perfect answer, but they have developed shared expectations for what credit can look like.</p>
+        <p>Science museums could follow their example. Rather than leaving every exhibit team to figure it out from scratch, the field could develop shared guidelines for crediting exhibits — guidelines that can be adapted as teams, institutions, and exhibits change.</p>
+      </div>
+
+      <figure class="q q-right">
+        <blockquote class="a" style="--x:759;--y:4499;--w:290">
+          <p class="t-h3">“Science doesn't just happen. It's made by people.”</p>
+          <footer class="credit">Dome Shows Producer</footer>
+        </blockquote>
+        <img class="a c col" src="assets/img/dark-orange.png" alt="" width="252" height="253"
+             style="--x:995;--y:4400;--w:252" data-line="98" data-dot="0.498,0.4921">
+      </figure>
+
+      <img class="a photo" id="photo-globe" src="assets/img/globe.png" width="559" height="333"
+           alt="A presenter pointing at a large projected globe in front of a seated group" style="--x:217;--y:4744;--w:559">
+
+      <h2 class="a t-h1w" style="--x:262;--y:5123;--w:520">Humanize science</h2>
+
+      <div class="a prose" style="--x:877;--y:4725;--w:460">
+        <p>Crediting isn't only about making sure someone's name appears on a list. It can also change the story an exhibit tells.</p>
+        <p>Science museums are places where people encounter scientific knowledge, but exhibits often present that knowledge as a finished result, leaving much of the human work that produced it out of view.</p>
+        <p>Scientific knowledge is shaped through the work of many people, through choices, interpretations, collaborations, and revisions that often disappear when the finished result is presented to the public.</p>
+        <p>Credit offers one way to bring some of that scientific process back into view. It can tell visitors not only what we know, but something about how that knowledge came to be and who contributed to making it possible.</p>
+        <p>In this sense, giving credit is not only about recognizing the people who deserve it. It is also about making the human production of science part of the stories we tell.</p>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── 5 · FINALE ───────────────────────── -->
+    <section class="s s-end">
+      <div class="cluster">
+        <img class="a c col" src="assets/img/end-purple-a.png" alt="" width="223" height="218"
+             style="--x:521;--y:5315;--w:223; --mx:38;--my:0;--mw:38" data-line="110" data-knot data-dot="0.5099,0.4977">
+        <img class="a c col" src="assets/img/end-green-a.png" alt="" width="248" height="252"
+             style="--x:178;--y:5310;--w:248; --mx:0;--my:2;--mw:36" data-knot data-dot="0.4782,0.4754">
+        <img class="a c col" src="assets/img/end-orange-sm.png" alt="" width="182" height="182"
+             style="--x:874;--y:5372;--w:182; --mx:72;--my:4;--mw:28" data-knot data-dot="0.5275,0.478">
+        <img class="a c col" src="assets/img/end-blue-a.png" alt="" width="212" height="212"
+             style="--x:1246.5;--y:5309.5;--w:212; --mx:70;--my:24;--mw:32" data-knot data-dot="0.4646,0.4976">
+        <img class="a c col" src="assets/img/end-purple-b.png" alt="" width="158" height="141"
+             style="--x:47;--y:5519;--w:158; --mx:-4;--my:25;--mw:26" data-knot data-dot="0.5032,0.5106">
+        <img class="a c col" src="assets/img/end-green-b.png" alt="" width="187" height="191"
+             style="--x:1082;--y:5526;--w:187; --mx:76;--my:60;--mw:28" data-knot data-dot="0.5241,0.4791">
+        <img class="a c col" src="assets/img/end-blue-b.png" alt="" width="200" height="200"
+             style="--x:186;--y:5655;--w:200; --mx:-6;--my:66;--mw:30" data-knot data-dot="0.46,0.4975">
+        <img class="a c col" src="assets/img/end-orange-lg.png" alt="" width="239" height="239"
+             style="--x:1234;--y:5712;--w:239; --mx:62;--my:78;--mw:38" data-knot data-dot="0.4812,0.5105">
+        <img class="a c col" src="assets/img/end-purple-c.png" alt="" width="184" height="164"
+             style="--x:938;--y:5820;--w:184; --mx:34;--my:86;--mw:28" data-knot data-dot="0.5027,0.5091">
+        <img class="a c col" src="assets/img/end-blue-c.png" alt="" width="202" height="202"
+             style="--x:599;--y:5865.5;--w:202; --mx:6;--my:84;--mw:30" data-knot data-dot="0.4653,0.4975">
+
+        <blockquote class="a t-finale" style="--x:405;--y:5594;--w:720">
+          “Science doesn't just happen. It's <strong>made by people”</strong>
+        </blockquote>
+      </div>
+
+      <!-- TODO: replace the three "#" with the real links -->
+      <nav class="downloads" aria-label="Downloads">
+        <a class="a btn" href="https://drive.google.com/file/d/1iIInieq4K5odNmwn-3J1xs4PLfBhRy08/view?usp=sharing" style="--x:186;--y:6113;--w:367"><span>Download the <strong>paper</strong> here</span></a>
+        <a class="a btn" href="https://drive.google.com/file/d/1EieK0M5YEFYrAmJMeiO9o39ZBnYiBAP2/view?usp=sharing" style="--x:571;--y:6113;--w:367"><span>Download the <strong>zine</strong> here</span></a>
+        <a class="a btn" href="https://drive.google.com/file/d/1_rxJ3sYeoHsiaOPgQkzjw-1q4HVUdP5_/view?usp=sharing" style="--x:959;--y:6113;--w:367"><span>Download the <strong>poster</strong> here</span></a>
+      </nav>
+
+      <footer class="team">
+        <p class="a team-title" style="--x:403;--y:6231;--w:400">the team behind this zine</p>
+        <div class="a team-col" style="--x:403;--y:6273;--w:240">
+          <strong>content</strong>
+          Kate Blomgren, LiU<br>
+          <a href="mailto:kate.blomgren@liu.se">(kate.blomgren@liu.se)</a>
+        </div>
+        <div class="a team-col" style="--x:663;--y:6273;--w:290">
+          <strong>design</strong>
+          Daniela Moyano-Dávila, LiU<br>
+          <a href="mailto:daniela.moyano-davila@liu.se">(daniela.moyano-davila@liu.se)</a>
+        </div>
+        <div class="a team-col" style="--x:969;--y:6273;--w:240">
+          <strong>editors</strong>
+          Miriah Meyer, LiU<br>
+          Ryan Wyatt, AMNH
+        </div>
+
+        <div class="logos">
+          <img class="a" src="assets/img/logo-liu.png" alt="Linköping University" width="287" height="103" style="--x:373;--y:6394;--w:287">
+          <img class="a" src="assets/img/logo-c.png" alt="Norrköpings Visualiseringscenter" width="150" height="88" style="--x:690;--y:6390;--w:152">
+          <img class="a" src="assets/img/logo-vid.png" alt="Visualization &amp; Interaction Design Lab" width="187" height="65" style="--x:892;--y:6417;--w:188">
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <!-- the line: drawn by assets/js/thread.js -->
+  <svg class="thread" id="thread" aria-hidden="true">
+    <defs>
+      <clipPath id="clip-light" clipPathUnits="userSpaceOnUse"><rect/><rect/></clipPath>
+      <clipPath id="clip-dark"  clipPathUnits="userSpaceOnUse"><rect/></clipPath>
+    </defs>
+    <path class="thread-main on-light" clip-path="url(#clip-light)" pathLength="1"/>
+    <path class="thread-main on-dark"  clip-path="url(#clip-dark)"  pathLength="1"/>
+    <path class="thread-tangle" pathLength="1"/>
+  </svg>
+</div>
+
+<!-- scroll button: says "scroll" at the top of the page and "back to top" at the end -->
+<button class="scroll-cue" id="scroll-cue" type="button" aria-label="Scroll down">
+  <svg viewBox="0 0 60 60" width="60" height="60" aria-hidden="true">
+    <path class="cue-ring" d="M30 6c11 0 23 8 24 22 1 13-9 26-23 26C17 54 6 44 6 31 6 17 17 6 30 6Z"/>
+    <path class="cue-ring" d="M31 9c12 1 20 10 20 21 0 12-10 21-22 20C18 49 9 41 10 29 11 17 20 8 31 9Z"/>
+    <circle class="cue-dot" cx="30" cy="30" r="3.4"/>
+  </svg>
+  <span class="cue-label">scroll</span>
+</button>
+
+<script src="assets/js/thread.js" defer></script>
+</body>
+</html>
